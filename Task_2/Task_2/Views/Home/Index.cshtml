@@ -1,0 +1,25 @@
+﻿@using Task_2.ViewModels
+@model HomeViewModels
+@{
+    ViewData["Title"] = "Index";
+}
+<ul style="border: 1px solid black">
+    @foreach (var item in Model.Cars)
+    {
+    <li style="list-style: none">Cars Id: @item.Id - Cars Brands: @item.Brand - Cars Models: @item.Model - Cars Average: @item.Average - Cars Prices: @item.Price - Cars Year: @item.Year</li>
+    }
+</ul>
+
+<ul style="border: 1px solid black">
+    @foreach (var item in Model.Brands)
+    {
+        <li style="list-style: none">Cars Brands Id: @item.Id - Cars Brands Name: @item.Name </li>
+    }
+</ul>
+
+<ul style="border: 1px solid black">
+    @foreach (var item in Model.Model)
+    {
+        <li style="list-style: none">Cars Models Id: @item.Id - Cars Models Name: @item.Name </li>
+    }
+</ul>

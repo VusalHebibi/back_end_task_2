@@ -1,0 +1,14 @@
+﻿
+@using Task_2.Models
+@model List<Cars>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<ul style="border: 1px solid black">
+    @foreach (var item in Model)
+    {
+    <li style="list-style: none">Cars Id: @item.Id - Cars Brands: @item.Brand - Cars Models: @item.Model - Cars Average: @item.Average - Cars Prices: @item.Price - Cars Year: @item.Year</li>
+    }
+</ul>
+
